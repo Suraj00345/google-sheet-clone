@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google-sheet-clone</title>
+    <link rel="stylesheet" href="options.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="options">
+      <form class="form">
+        <select name="fontFamily" class="input">
+          <option value="Regular">Regular</option>
+          <option value="B-bold">B-bold</option>
+          <option value="blackItalic">blackItalic</option>
+          <option value="T-thin">T-thin</option>
+        </select>
+        <input
+          class="input"
+          type="number"
+          name="fontSize"
+          min="8"
+          max="32"
+          value="16"
+        />
+        <div>
+          <input type="checkbox" id="bold" name="isBold" />
+          <label class="material-icons" for="bold">
+            <span class="material-icons"> format_bold </span>
+          </label>
+        </div>
+        <div>
+          <input type="checkbox" id="italic" name="isItalic" />
+          <label class="material-icons" for="italic"> format_italic </label>
+        </div>
+        <div>
+          <input type="checkbox" id="underline" name="isUnderline" />
+          <label class="material-icons" for="underline">
+            format_underline
+          </label>
+        </div>
+
+        <div>
+          <input type="radio" name="align" value="left" id="left" checked />
+          <label class="material-icons" for="left"> format_align_left </label>
+          <input type="radio" name="align" value="center" id="center" />
+          <label class="material-icons" for="center">
+            format_align_center
+          </label>
+          <input type="radio" name="align" value="right" id="right" />
+          <label class="material-icons" for="right"> format_align_right </label>
+        </div>
+
+        <div>
+          <label for="textColor" class="material-icons"
+            >format_color_text</label
+          >
+          <input type="color" name="textColor" id="textColor" />
+        </div>
+        <div>
+          <label for="bgColor" class="material-icons">format_color_fill</label>
+          <input type="color" value="#ffffff" name="bgColor" id="bgColor" />
+        </div>
+        <span onclick="exportData()" id="export" class="material-icons"
+          >cloud_upload</span>
+      </form>
+    </div>
+
+    <div id="cell-state">
+      <div id="active-cell">null</div>
+      <input type="text" placeholder="f ( x )" />
+    </div>
+
+    <div id="root">
+      <div id="header">
+        <div class="first"></div>
+      </div>
+
+      <div id="body">
+        <div id="sno"></div>
+        <div id="body-container"></div>
+      </div>
+    </div>
+    <script src="./functionality.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+.form {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+input:checked + label {
+  background-color: #d2e2fd;
+}
+.input {
+  padding: 5px;
+  min-width: 100px;
+  border-radius: 3px;
+}
+
+.input:focus {
+  outline: none;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+@font-face{
+  font-family: B-bold;
+  src: url(./fonts/Roboto-Bold.ttf);
+}
+
+@font-face{
+  font-family: blackItalic;
+  src: url(./fonts/Roboto-BlackItalic.ttf);
+}
+
+@font-face{
+  font-family: Regular;
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
+@font-face{
+  font-family: T-thin;
+  src: url(./fonts/Roboto-Thin.ttf);
+}
+
+#export{
+  cursor: pointer;
+  font-size: 32px !important;
+}
