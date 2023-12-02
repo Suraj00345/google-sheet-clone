@@ -51,7 +51,7 @@ input[type="radio"] + label {
   src: url(./fonts/Roboto-Thin.ttf);
 }
 
-#export{
+button{
   cursor: pointer;
   font-size: 32px !important;
 }
