@@ -1,16 +1,34 @@
 .form {
-  padding-top: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   gap: 20px;
-  background-color: rgb(32, 123, 42);
+  background-color: #eaf1fc;
   border-radius: 5px;
   width: 100%;
 }
 
+.nav-links {
+  padding: 0 0;
+  padding-bottom: 7px;
+  display: flex;
+  gap: 1rem;
+  display: flex;
+  justify-content: left;
+  padding-left: 10px;
+  background-color: green;
+  padding-bottom: 20px;
+}
+
+.nav-links>a{
+  font-family: 100px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
 input:checked + label {
-  background-color: #d2e2fd;
+  background-color: #cdd3db;
 }
 .input {
   padding: 5px;

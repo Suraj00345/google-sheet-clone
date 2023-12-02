@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google-sheet-clone</title>
-    <link rel="icon" type="image/x-icon" href="./Google_Sheets_Logo_16px.png">
+    <link rel="icon" type="image/x-icon" href="./Google_Sheets_Logo_16px.png" />
     <link rel="stylesheet" href="options.css" />
     <link rel="stylesheet" href="styles.css" />
     <link
@@ -13,6 +13,13 @@
     />
   </head>
   <body>
+    <div class="nav-links">
+      <a href="#">File</a>
+      <a href="#">Home</a>
+      <a href="#">Insert</a>
+      <a href="#">Layout</a>
+      <a href="#">Help</a>
+  </div>
     <div id="options">
       <form class="form">
         <select name="fontFamily" class="input">
@@ -21,14 +28,21 @@
           <option value="blackItalic">blackItalic</option>
           <option value="T-thin">T-thin</option>
         </select>
-        <input
+        <select name="fontSize" class="input">
+          <option value="14">14</option>
+          <option value="16">16</option>
+          <option value="18">18</option>
+          <option value="25">25</option>
+          <option value="32">32</option>
+        </select>
+        <!-- <input
           class="input"
           type="number"
           name="fontSize"
           min="8"
           max="32"
           value="16"
-        />
+        /> -->
         <div>
           <input type="checkbox" id="bold" name="isBold" />
           <label class="material-icons" for="bold">
@@ -67,10 +81,11 @@
           <label for="bgColor" class="material-icons">format_color_fill</label>
           <input type="color" value="#ffffff" name="bgColor" id="bgColor" />
         </div>
-        <button onclick="exportData()" class="material-icons">cloud_upload</button>
-       
-        <button type="file" id="upload" class="material-icons">cloud_download</button>
-      
+        <button onclick="exportData()" class="material-icons">
+          cloud_upload
+        </button>
+
+        <button class="material-icons" id="uploadElement">cloud_download</button>
       </form>
     </div>
 

@@ -36,3 +36,6 @@ for (let row = 1; row <= rows; row++) {
   }
   bodyContainer.appendChild(rowElement);
 }
+
+
+
