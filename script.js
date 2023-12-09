@@ -3,7 +3,7 @@ const snoContainer = document.getElementById("sno");
 const bodyContainer = document.getElementById("body-container");
 
 const columns = 26;
-rows = 50;
+rows = 100;
 for (let i = 1; i <= columns; i++) {
   const headCell = document.createElement("div");
   headCell.className = "head-cell";
